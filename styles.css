@@ -1,40 +1,60 @@
+/* styles.css */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #FBAB7E;
-    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    text-align: center;
+    background: linear-gradient(to bottom right, #f5f5f5, #e0e0e0);
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 20px;
 }
 
-#container {
-    background-color: rgba(255, 255, 255, 0.8);
+.content {
+    max-width: 600px;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
-    max-width: 50%;
-    margin: 0 auto; /* Centers the container horizontally */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-#converter {
+h1 {
+    color: #333;
+}
+
+.joke {
+    margin-bottom: 20px;
     padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-    text-align: center;
+.joke p {
+    margin: 0;
+    padding: 10px 0;
+    font-size: 120%;
 }
 
-form {
-    text-align: center;
-}
-
-label, select, input, button {
-    display: block;
-    margin: 10px auto;
-}
-
-#result {
+#joke-button {
     margin-top: 20px;
-    font-weight: bold;
-    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc00;
+    color: #333;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#joke-button:hover {
+    background-color: #ffdb4d;
 }
