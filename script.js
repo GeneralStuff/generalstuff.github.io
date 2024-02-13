@@ -24,20 +24,20 @@ document.addEventListener('DOMContentLoaded', function () {
         jokeContainer.innerHTML = '';
         jokeContainer.appendChild(jokeElement);
 
-        // Show the punchline after 3 seconds
+        
         setTimeout(function () {
             answerElement.style.display = 'block';
         }, 3000);
     }
 
-    // Display a joke initially
+    
     displayJoke();
 
-    // Handle button click to provide a new joke
+    
     jokeButton.addEventListener('click', function () {
         displayJoke();
     });
 
-    // Change button text to "Tristan bless me more!"
+    
     jokeButton.textContent = "Tristan bless me more!";
 });
